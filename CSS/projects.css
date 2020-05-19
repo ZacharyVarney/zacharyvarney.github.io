@@ -55,7 +55,7 @@ body {
 }
 
 .nav-button#active {
-    color: white;
+    color: #e8e8e8;
 }
 
 .burger {
@@ -104,6 +104,38 @@ body {
     color: #A4B0B7;
 }
 
+.footer {
+    width: 100%;
+    height: 55px;
+    bottom: 0;
+    position: absolute;
+    background-color: #11151C;
+}
+
+.footer-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 50%;
+    margin: auto;
+}
+
+.footer-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    width: 50%;
+}
+
+.footer-links {
+    margin: auto;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
 @media only screen and (max-width: 1024px) {
     .navbar {
         height: 250px;
@@ -144,6 +176,26 @@ body {
 
     .temp-text {
         font-size: 26px;
+    }
+
+    .footer {
+        position: static;
+        height: 110px;
+    }
+
+    .footer-content-container {
+        width: 100%;
+    }
+
+    .footer-button-container {
+        min-height: 30%;
+        width: 80%;
+        margin: auto;
+    }
+
+    .footer-links {
+        width: 60px;
+        height: 60px;
     }
 }
 
@@ -201,6 +253,26 @@ body {
     .temp-text {
         font-size: 16px;
     }
+
+    .footer {
+        position: static;
+        height: 60px;
+    }
+
+    .footer-content-container {
+        width: 95%;
+    }
+
+    .footer-button-container {
+        min-height: 100%;
+        width: 70%;
+        margin: 0;
+    }
+
+    .footer-links {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 .nav-active {
@@ -244,6 +316,10 @@ body {
 
 @supports not (-ms-ime-align: auto) {
     .nav-content-container {
+        justify-content: space-evenly;
+    }
+
+    .footer-content-container {
         justify-content: space-evenly;
     }
 }
